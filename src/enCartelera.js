@@ -1,7 +1,7 @@
 const fs = require('fs')
 let enCartelera = {
         db:'./data/movies.json',
-        titulo: 'Bienvenido a DH movies...',
+        titulo: 'En Cartelera',
         leerJSON: function(){
             let moviesJSON = fs.readFileSync(this.db, 'utf-8');
             let movies = JSON.parse(moviesJSON);
